@@ -81,6 +81,7 @@
 .card-faq .question {
     color: var(--VeryDarkGrayishBlue);
     display: flex;
+    font-size: 1.1em;
     justify-content: space-between;
     align-items: center;
     padding-right: 88px;
@@ -94,7 +95,7 @@
 
 .answer {
     color: var(--DarkGrayishBlue);
-    font-size: 0.7em;
+    font-size: 0.85em;
     padding-right: 99px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -115,7 +116,7 @@ hr {
 }
 
 .answeractive {
-    height: 21px;
+    height: 40px;
 }
 
 .questionactive {
