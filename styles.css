@@ -164,6 +164,7 @@ hr {
 @media (max-width: 600px) {
     .contrainer {
         justify-content: end;
+        align-items: center;
     }
 
     .card-header-illustration-box-desktop {
@@ -178,7 +179,6 @@ hr {
         width: 100%;
     }
     .card {
-        margin: 0 auto;
         max-width: 350px;
         min-width: 350px;
         flex-wrap: wrap;
