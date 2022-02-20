@@ -135,7 +135,7 @@ hr {
     from {
         transform: scale(72%) translateX(-67%) translateY(73%);
           }
-    to 
+    to
     { transform: scale(72%) translateX(-67%) translateY(91%);
 }
 }
@@ -152,7 +152,7 @@ hr {
 .attribution {
     margin-top: 30px;
     font-size: 11px;
-    text-align: center; 
+    text-align: center;
     color: white;
 }
 .attribution a { color: var(--SoftRed) }
@@ -162,6 +162,10 @@ hr {
 }
 
 @media (max-width: 600px) {
+    .contrainer {
+        justify-content: end;
+    }
+
     .card-header-illustration-box-desktop {
         display: none;
     }
@@ -218,7 +222,7 @@ hr {
     .answeractive {
         height: 29px;
     }
-    
+
     @keyframes move3 {
         from {
             transform: scale(0.8) translateY(-323px) translateX(0px);
