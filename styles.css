@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+
+:root {
+    /* text */
+    --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --SoftRed: hsl(14, 88%, 65%);
+    /* text */
+    --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --DarkGrayishBlue: hsl(240, 6%, 50%);
+
+    /*Background gradient:*/
+    --SoftViolet: hsl(273, 75%, 66%);
+    --SoftBlue: hsl(240, 73%, 65%);
+    /* Dividers */
+    --LightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+.contrainer {
+    background: var(--SoftBlue);
+    background-image: linear-gradient(0deg, var(--SoftBlue) 0%, var(--SoftViolet) 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.card {
+    max-width: 730px;
+    min-width: 730px;
+    background-color: white;
+    display: flex;
+    border-radius: 1.1em;
+    box-shadow: 0px 10px 21px -2px rgba(66, 68, 90, 1);
+}
+
+.card-faq {
+    width: 50%;
+    min-height: 45vh;
+}
+
+.card-header {
+    content: "";
+    position: relative;
+    background-color: transparent;
+    width: 50%;
+    overflow: hidden;
+}
+
+.card-header-bg-pattern-desktop {
+    transform: scale(61%) translateY(-61%) translateX(-83%);
+    position: absolute;
+}
+
+.card-header-illustration-box-desktop {
+    z-index: 3;
+    position: absolute;
+    transform: scale(72%) translateX(-83%) translateY(75%);
+    animation: move1 3.8s ease-in-out infinite alternate;
+}
+
+.card-header-illustration-woman-desktop {
+    position: absolute;
+    transform: scale(74%) translateX(-35%) translateY(-6%);
+    animation: move2 3.8s ease-in-out infinite alternate;
+}
+
+.card-faq h1 {
+    font-size: 24px;
+    margin: 36px 0 24px 0;
+}
+.card-faq .question {
+    color: var(--VeryDarkGrayishBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 88px;
+    cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+.question:hover {
+    color: var(--SoftRed);
+}
+
+.answer {
+    color: var(--DarkGrayishBlue);
+    font-size: 0.7em;
+    padding-right: 99px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.3s linear;
+}
+
+hr {
+    height: 0.01em;
+    border: none;
+    background-color: var(--LightGrayishBlue);
+    width: 80%;
+    margin: 10px 0;
+}
+
+.downpadding {
+    padding-bottom: 16px;
+}
+
+.answeractive {
+    height: 21px;
+}
+
+.questionactive {
+    font-weight: 700;
+}
+
+.arrow {
+    transition: 0.4s linear;
+}
+
+.arrowup {
+    transform:rotateX(180deg);
+    transition: transform 0.6s linear;
+}
+
+@keyframes move1 {
+    from {
+        transform: scale(72%) translateX(-67%) translateY(73%);
+          }
+    to 
+    { transform: scale(72%) translateX(-67%) translateY(91%);
+}
+}
+
+@keyframes move2 {
+    from {
+        transform: scale(74%) translateX(-35%) translateY(-6%);
+    }
+    to {
+        transform: scale(74%) translateX(-35%) translateY(0%); /*-4*/
+    }
+}
+
+.attribution {
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: center; 
+    color: white;
+}
+.attribution a { color: var(--SoftRed) }
+
+.card-header-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .card-header-illustration-box-desktop {
+        display: none;
+    }
+    .card-header {
+        display: none;
+    }
+    .card-header-mobile {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .card {
+        margin: 0 auto;
+        max-width: 365px;
+        min-width: 365px;
+        flex-wrap: wrap;
+    }
+    .woman-mobile {
+       position: absolute;
+       transform: scale(0.8) translateY(-333px) translateX(0px);
+    }
+    .bg-mobile {
+        position: relative;
+        left: 60px;
+        transform: scale(1.24);
+    }
+
+    .card-faq {
+        width:100%;
+        margin-left: 20px;
+    }
+
+    .card-faq h1 {
+        margin: 36px;
+        text-align: center;
+    }
+
+    .card-faq .question,
+    .answer,
+    hr {
+        padding-right: 26px;
+        margin-left: 12px;
+        font-size: 1.28em;
+    }
+    hr{
+        width: 89%;
+    }
+
+    .answer {
+        font-size: 1em
+    }
+
+    .answeractive {
+        height: 29px;
+    }
+    
+}
