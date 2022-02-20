@@ -35,8 +35,8 @@
 }
 
 .card {
-    max-width: 860px;
-    min-width: 860px;
+    max-width: 730px;
+    min-width: 730px;
     background-color: white;
     display: flex;
     border-radius: 1.1em;
@@ -183,6 +183,7 @@ hr {
     .woman-mobile {
        position: absolute;
        transform: scale(0.8) translateY(-333px) translateX(0px);
+       animation: move3 3.8s ease-in-out infinite alternate;
     }
     .bg-mobile {
         position: relative;
@@ -219,4 +220,12 @@ hr {
         height: 29px;
     }
     
+    @keyframes move3 {
+        from {
+            transform: scale(0.8) translateY(-323px) translateX(0px);
+        }
+        to {
+            transform: scale(0.8) translateY(-335px) translateX(0px);
+        }
+    };
 }
