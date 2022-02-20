@@ -45,7 +45,6 @@
 
 .card-faq {
     width: 50%;
-    min-height: 36vh;
 }
 
 .card-header {
@@ -112,7 +111,7 @@ hr {
 }
 
 .downpadding {
-    padding-bottom: 16px;
+    padding-bottom: 24px;
 }
 
 .answeractive {
