@@ -3,19 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | FAQ Accordion Card</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-  </style>
 </head>
 <body>
   <div class="contrainer">
@@ -89,27 +83,23 @@
     <footer>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Krzysztof Graczyk</a>.
+        Coded by <a href="https://github.com/Magic-Cookiee">Krzysztof Graczyk</a>.
       </div>
     </footer>
   </div>
 
-
-
   <script>
-
     let question = document.getElementsByClassName('question');
     let answer = document.getElementsByClassName('answer');
     let arrows = document.getElementsByClassName('arrow');
 
     for ( let i = 0; i < question.length; i++) {
-        question[i].onclick = function() {
+          question[i].onclick = function() {
           answer[i].classList.toggle('answeractive')
           question[i].classList.toggle('questionactive')
           arrows[i].classList.toggle('arrowup');
         }
     }
-
   </script>
 </body>
 </html>
