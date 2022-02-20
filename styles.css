@@ -191,8 +191,8 @@ hr {
     }
     .bg-mobile {
         position: relative;
-        left: 60px;
-        transform: scale(1.24);
+        left: 44px;
+        transform: scale(1.1);
     }
     .card-faq {
         width:100%;
