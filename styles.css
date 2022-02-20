@@ -179,8 +179,9 @@ hr {
         width: 100%;
     }
     .card {
-        max-width: 350px;
-        min-width: 350px;
+        margin: 0 auto;
+        max-width: 340px;
+        min-width: 340px;
         flex-wrap: wrap;
     }
     .woman-mobile {
