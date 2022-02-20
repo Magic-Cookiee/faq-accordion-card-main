@@ -179,8 +179,8 @@ hr {
     }
     .card {
         margin: 0 auto;
-        max-width: 365px;
-        min-width: 365px;
+        max-width: 350px;
+        min-width: 350px;
         flex-wrap: wrap;
     }
     .woman-mobile {
@@ -196,7 +196,6 @@ hr {
 
     .card-faq {
         width:100%;
-        margin-left: 20px;
     }
 
     .card-faq h1 {
@@ -207,12 +206,12 @@ hr {
     .card-faq .question,
     .answer,
     hr {
-        padding-right: 26px;
-        margin-left: 12px;
+        padding-right: 16px;
+        margin-left: 16px;
         font-size: 1.28em;
     }
     hr{
-        width: 89%;
+        width: 92%;
     }
 
     .answer {
